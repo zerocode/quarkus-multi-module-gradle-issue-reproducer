@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.4.32"
+    id("io.quarkus") version "1.13.2.Final"
 }
 
 group = "org.example"
@@ -17,6 +18,7 @@ subprojects {
 
     apply {
         plugin("kotlin")
+        plugin("io.quarkus")
     }
 
     dependencies {
